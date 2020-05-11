@@ -1,0 +1,266 @@
+body {
+  background-image: url(../images/BG.png);
+  background-size: cover;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+body,
+form,
+div,
+p,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+table tr,
+table td {
+  border: none;
+  color: #000000;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  font-family: Arial;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.mainer {
+  max-width: 600px;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 145px auto;
+  color: #fff;
+}
+
+.menu {
+  background-color: #2b3040;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+}
+
+.menu .menu-item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 20px 25px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.menu .menu-item.active {
+  border-bottom: 2px solid #fff;
+  padding: 30px 20px 23px;
+}
+
+.menu .menu-item.active .menu-icon,
+.menu .menu-item.active .menu-caption {
+  color: white;
+}
+
+.menu .menu-item .menu-icon {
+  color: #8d91a3;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 0 4px 0;
+}
+
+.menu .menu-item .menu-caption {
+  color: #8d91a3;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.tab-info {
+  background-color: #212534;
+  margin: 0 auto;
+  padding: 55px 40px 60px 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-info .img {
+  margin: 0 38px 0 0;
+}
+
+.tab-info .img .poster {
+  display: block;
+  margin: 0 0 26px 0;
+}
+
+.tab-info .img .rating {
+  position: relative;
+  margin: 0 13px 30px;
+}
+
+.tab-info .img .rating label:hover,
+.tab-info .img .rating input:checked + label,
+.tab-info .img .rating input:checked ~ label,
+.tab-info .img .rating input:hover ~ label,
+.tab-info .img .rating label:hover ~ label {
+  background-position: 0 0;
+}
+
+.tab-info .img .rating input {
+  display: none;
+}
+
+.tab-info .img .rating label {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../images/stars.png);
+  background-position: 0 -19px;
+  cursor: pointer;
+}
+
+.tab-info .img .rating label:nth-last-of-type(2) {
+  left: 27px;
+}
+
+.tab-info .img .rating label:nth-last-of-type(3) {
+  left: 54px;
+}
+
+.tab-info .img .rating label:nth-last-of-type(4) {
+  left: 81px;
+}
+
+.tab-info .img .rating label:nth-last-of-type(5) {
+  left: 108px;
+}
+
+.tab-info .description .flex-wrap1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 40px 0;
+}
+
+.tab-info .description .flex-wrap1 .text {
+  margin: 0 30px 0 0;
+}
+
+.tab-info .description .flex-wrap1 .text .caption {
+  color: #fff;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.tab-info .description .flex-wrap1 .text .postcaption {
+  font-size: 14px;
+  color: #fdfdfd;
+}
+
+.tab-info .description .text {
+  color: #b7bacd;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0 0 50px 0;
+}
+
+.tab-info .description .flex-wrap2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-info .description .flex-wrap2 .price {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.tab-info .description .flex-wrap2 .price .discount {
+  color: #fedc3f;
+  font-weight: bold;
+}
+
+.tab-info .description .flex-wrap2 .price .price_itself {
+  color: #fff;
+  font-size: 32px;
+}
+
+.tab-info .description .flex-wrap2 .btn {
+  color: #fff;
+  font-size: 16px;
+  background-color: #13e28d;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 30px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.tab-info .description .flex-wrap2 .btn:hover {
+  background-color: #0fb370;
+}
+
+.tab-ratings {
+  display: none;
+  background-color: #212534;
+  margin: 0 auto;
+  padding: 55px 40px 60px 45px;
+  color: #b7bacd;
+  font-size: 16px;
+}
+
+.tab-sources {
+  display: none;
+  background-color: #212534;
+  margin: 0 auto;
+  padding: 55px 40px 60px 45px;
+}
+
+.tab-sources img {
+  display: inline-block;
+  width: 40%;
+  margin: 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */
