@@ -1,29 +1,17 @@
 $("document").ready(function () {
   $("#js-info").click(function () {
-    $(".tab-info").css({
-      display: "flex",
-    });
-    $(".tab-ratings").css({
-      display: "none",
-    });
-    $(".tab-sources").css({
-      display: "none",
-    });
+    $(".tab-info").show();
+    $(".tab-ratings").hide();
+    $(".tab-sources").hide();
     $("#js-info").addClass("active");
     $("#js-rating").removeClass("active");
     $("#js-buy").removeClass("active");
   });
 
   $("#js-rating").click(function () {
-    $(".tab-info").css({
-      display: "none",
-    });
-    $(".tab-ratings").css({
-      display: "block",
-    });
-    $(".tab-sources").css({
-      display: "none",
-    });
+    $(".tab-info").hide();
+    $(".tab-ratings").show();
+    $(".tab-sources").hide();
 
     $("#js-info").removeClass("active");
     $("#js-rating").addClass("active");
@@ -31,16 +19,10 @@ $("document").ready(function () {
   });
 
   $("#js-buy").click(function () {
-    $(".tab-info").css({
-      display: "none",
-    });
-    $(".tab-ratings").css({
-      display: "none",
-    });
+    $(".tab-info").hide();
+    $(".tab-ratings").hide();
 
-    $(".tab-sources").css({
-      display: "block",
-    });
+    $(".tab-sources").show();
     $("#js-info").removeClass("active");
     $("#js-rating").removeClass("active");
     $("#js-buy").addClass("active");
